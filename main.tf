@@ -24,5 +24,6 @@ resource "aws_instance" "web" {
   tags = {
     Name = "willie-test-ec2"
   }
+
 }
 
