@@ -1,0 +1,68 @@
+ {
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "",
+          "rules": [
+            {
+              "id": "AWS.Instance.NetworkSecurity.Medium.0506",
+              "shortDescription": {
+                "text": "Instances are Configured under Virtual Private Cloud"
+              },
+              "fullDescription": {
+                "text": "Migrate from EC2 classic to VPCs. 1: Create a VPC. 2: Configure Your Security Group. 3: Create an AMI from Your EC2-Classic Instance. 4: Launch an Instance Into Your VPC. Detailed steps available at:Â http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-migrate.html"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "help text",
+                "markdown": "help markdown"
+              },
+              "properties": {
+                "tags": [
+                  "Test"
+                ],
+                "precision": "very-high"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "AWS.Instance.NetworkSecurity.Medium.0506",
+          "level": "warning",
+          "message": {
+            "text": "Instances are Configured under Virtual Private Cloud"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "https://github.com/williepaul/aws-tf-test/main.tf"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": ""
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": ""
+          }
+        }
+      ]
+    }
+  ]
+}
+
