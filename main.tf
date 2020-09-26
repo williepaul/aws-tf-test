@@ -25,5 +25,6 @@ resource "aws_instance" "web" {
     Name = "willie-test-ec2"
   }
 
+
 }
 
