@@ -28,3 +28,11 @@ resource "aws_instance" "web" {
 
 }
 
+
+resource "aws_vpc" "<resource_name>" {
+  cidr_block = "<cidr>"
+
+  tags = {
+    Name = "main"
+  }
+}
